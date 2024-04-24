@@ -1,9 +1,9 @@
 import re
 from collections import Counter
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords # type: ignore
 
 # Download NLTK stopwords if not already downloaded
-import nltk
+import nltk # type: ignore
 nltk.download('stopwords')
 
 # Define NLTK English stopwords
@@ -36,5 +36,5 @@ def main():
     for word, frequency in word_frequency.items():
         print(f"{word}: {frequency}")
 
-if __name__ == "__main__":
+if __name__ == "_main_":
     main()
